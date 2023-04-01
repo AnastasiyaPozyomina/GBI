@@ -2,12 +2,32 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import {Link} from 'react-router-dom';
 
 export default function NavHeader () {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <ul className="nav">
+        <li>
+          <Link to="/about" className="nav__link link">О компании</Link>
+          
+        </li>
+        <li>
+          <Link to="/reviews" className="nav__link link">Отзывы</Link>
+        </li>
+        <li>
+          <Link to="/blog" className="nav__link link">Статьи</Link>
+        </li>
+        <li>
+          <Link to="/questions-and-answers" className="nav__link link">Вопросы и ответы</Link>
+        </li>
+        <li>
+          <Link to="/contacts" className="nav__link link">Контакты</Link>
+        </li>
+      </ul>
+    
+
+      {/* <Navbar bg="light" expand="lg">
         <Container fluid>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -17,16 +37,15 @@ export default function NavHeader () {
               navbarScroll
             >
         
-              <Nav.Link to="/about" href="#action1">О компании</Nav.Link>
-              <Nav.Link  href="#action2">Отзывы</Nav.Link>
-              <Nav.Link  href="#action1">Статьи</Nav.Link>
-              <Nav.Link  href="#action2">Вопросы и ответы</Nav.Link>
-              <Nav.Link  href="#action2">Контакты</Nav.Link>
+              <NavLink to="/about" href="#action1">О компании</NavLink>
+              <NavLink  href="#action2">Отзывы</NavLink>
+              <NavLink  href="#action1">Статьи</NavLink>
+              <NavLink  href="#action2">Вопросы и ответы</NavLink>
+              <NavLink  href="#action2">Контакты</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
     </div>
   );
 }
-
