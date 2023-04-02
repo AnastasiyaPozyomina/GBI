@@ -17,21 +17,19 @@ import Subscription from './components/Subscription';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer/Footer';
 import PanelBottom from './components/Header/Panel/PanelBottom/PanelBottom';
+import Table from './components/Table';
+import Layout from './components/Layout';
 
 function App () {
   return (
     <div>
       <Container>
-        <PanelTop />
-        <PanelBottom />
-        <SearchForm />
-        <MainContent />
-        <ProductCatalog />
-        <Subscription />
-        <Sponsors />
-        <Footer />
+        <Layout>
+          <ProductCatalog />
+          <Subscription />
+          <Sponsors />
+        </Layout>
       </Container>
-
     </div>
   );
 }

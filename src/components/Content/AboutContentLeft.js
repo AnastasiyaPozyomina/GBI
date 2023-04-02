@@ -6,6 +6,7 @@ import CarouselBox from '../CarouselBox';
 export default function AboutContentLeft () {
     return (
        <>
+       <h1>О нас</h1>
        <CarouselBox />
        <Row>
         <Col>
@@ -115,17 +116,7 @@ export default function AboutContentLeft () {
                 </div>
             </div>
 
-            <section className="sponsors">
-                <a className="sponsors__link" href="#"> <img src="assets/images/sponsors/эталон.svg"
-                        alt="логотип ЭТАЛОн" /></a>
-                <a className="sponsors__link" href="#"><img src="assets/images/sponsors/МИЦ.svg" alt="логотип МИЦ" /></a>
-                <a className="sponsors__link" href="#"><img src="assets/images/sponsors/ПИК.svg"
-                        alt="логотип ПИК группа" /></a>
-                <a className="sponsors__link" href="#"> <img src="assets/images/sponsors/ДОНСТРОЙ.svg"
-                        alt="логотип ДОНСТРОЙ" /></a>
-                <a className="sponsors__link" href="#"><img src="assets/images/sponsors/Конструктор.svg"
-                        alt="логотип КОНСТРУКТОР" /></a>
-            </section>
+        
         
     </div>
     </>

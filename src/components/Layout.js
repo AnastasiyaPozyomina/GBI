@@ -1,18 +1,19 @@
 import React from 'react';
-import { Grid, Row } from 'react-bootstrap';
-import Navigation from '../Navigation/Navigation';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import { Container } from 'react-bootstrap';
 
-const layout = (props) => {
+
+export default function Layout ({ children }) {
     return (
-        <Grid>
-            <Row>
-                <Navigation/>
-            </Row>
-            <main>
-                {props.children}
-            </main>
-        </Grid>
+      <>
+    <Container>
+    <Header />
+    <main>{children}</main>
+    <Footer />
+    </Container>
+   
+      </>
     )
-}
+  }
 
-export default layout;
