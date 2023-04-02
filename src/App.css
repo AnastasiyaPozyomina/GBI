@@ -508,6 +508,11 @@ ul {
   margin: 0;
 }
 
+.our-products__img {
+  width:80px;
+  height:80px ;
+}
+
 .list {
   margin-top: 67px;
   width: 100%;
