@@ -6,6 +6,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from 'react-query';
+import {NavLink} from 'react-router-dom';
 
 const fetchProducts = async () => {
   const res = await fetch (
@@ -16,6 +17,7 @@ const fetchProducts = async () => {
 
 export default function ProductCatalog () {
   const {data, status} = useQuery ('products', fetchProducts);
+
   return (
     <section className="our-products">
       <h2>Наша продукция </h2>
@@ -25,8 +27,12 @@ export default function ProductCatalog () {
         {status === 'success' &&
           <ul className="list">
             {data.map (data => (
-              <li className="list__item" key={data.id}>
-                <a className="our-products__card" href="#">
+              <li className="list__item" key={data.id} component="ProductPage">
+                <NavLink
+                  to={'/products/' + data.id}
+                  className="our-products__card"
+                >
+                  {data.name}
                   <div className="our-products__caption">
 
                     {' '}
@@ -46,7 +52,7 @@ export default function ProductCatalog () {
                     src={data.image}
                     alt={data.title}
                   />
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>}
@@ -54,4 +60,3 @@ export default function ProductCatalog () {
     </section>
   );
 }
-

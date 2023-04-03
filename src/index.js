@@ -7,6 +7,8 @@ import Blog from './pages/Blog';
 import Contacts from './pages/Contacts';
 import Reviews from './pages/Reviews';
 import QuestionsAndAnswers from './pages/QuestionsAndAnswers';
+import ProductPage from './pages/ProductPage';
+import ProductCatalog from './components/ProductCatalog';
 
 render (
   <BrowserRouter>
@@ -17,6 +19,7 @@ render (
       <Route path="/reviews" element={<Reviews />} />
       <Route path="/questions-and-answers" element={<QuestionsAndAnswers />} />
       <Route path="/contact" elememnt={<Contacts />} />
+      <Route path="/products/:productId" elememnt={<ProductPage />}  />
     </Routes>
   </BrowserRouter>,
   document.getElementById ('root')
