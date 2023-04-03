@@ -13,6 +13,7 @@ const fetchProducts = async () => {
   );
   return res.json ();
 };
+
 export default function ProductCatalog () {
   const {data, status} = useQuery ('products', fetchProducts);
   return (
