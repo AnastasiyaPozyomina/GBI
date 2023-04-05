@@ -1,13 +1,11 @@
 import React from 'react';
 
-
-
-
-export default function CatalogPreview () {
+const CatalogPreview = () => {
   return (
-  <div>
-    Каталог
-  </div>
-
+    <div>
+      Каталог
+    </div>
   );
 }
+
+export default  CatalogPreview;

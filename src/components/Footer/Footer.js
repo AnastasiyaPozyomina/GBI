@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer () {
+const Footer = () => {
   return (
     <footer>
       <div className="footer-container">
@@ -15,10 +15,12 @@ export default function Footer () {
 
             <div className="company__contact">
               <p className="phone-number">
-                <a class="link" href="tel:88000000000"> 8 800 000 00 00</a>
+                <a className="link" href="tel:88000000000"> 8 800 000 00 00</a>
               </p>
               <p className="site">
-                <a class="link" href="mailto:info@ruzhbi.ru">info@ruzhbi.ru</a>
+                <a className="link" href="mailto:info@ruzhbi.ru">
+                  info@ruzhbi.ru
+                </a>
               </p>
             </div>
 
@@ -128,4 +130,6 @@ export default function Footer () {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

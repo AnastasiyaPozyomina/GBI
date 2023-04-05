@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from 'react-query';
+import {useQuery} from 'react-query';
 
 const fetchProducts = async () => {
   const res = await fetch (
@@ -14,7 +8,7 @@ const fetchProducts = async () => {
   return res.json ();
 };
 
-export default function SearchForm () {
+const SearchForm = () => {
   const {data, status} = useQuery ('products', fetchProducts);
   return (
     <section className="catalog">
@@ -22,8 +16,8 @@ export default function SearchForm () {
       {status === 'loading' && <p>Загрузка...</p>}
       {status === 'success' &&
         <ul id="menu-catalog">
-          <li onclick="clickButtons()">
-            <a class="menu-catalog__title" href="#">
+          <li onClick="clickButtons()">
+            <a className="menu-catalog__title" href="#">
               <img
                 src="assets/images/main-content/Group1.svg"
                 alt="меню каталога"
@@ -53,4 +47,6 @@ export default function SearchForm () {
       </div>
     </section>
   );
-}
+};
+
+export default SearchForm;

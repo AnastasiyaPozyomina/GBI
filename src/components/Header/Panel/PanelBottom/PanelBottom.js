@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function PanelBottom () {
+const PanelBottom = () => {
   return (
     <div className="main-panel-bottom">
       <div className="logo">
@@ -30,8 +30,14 @@ export default function PanelBottom () {
           />
           <p className="cart__price">0 руб</p>
         </div>
-        <img className="user-icon" src="assets/images/main-panel/user-icon.svg" alt="иконка пользователя" />
+        <img
+          className="user-icon"
+          src="assets/images/main-panel/user-icon.svg"
+          alt="иконка пользователя"
+        />
       </div>
     </div>
   );
-}
+};
+
+export default PanelBottom;

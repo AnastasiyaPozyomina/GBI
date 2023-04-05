@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Reviews () {
+const Reviews = () => {
   return (
     <div>
       <h1>Отзывы</h1>
     </div>
   );
-}
+};
+export default Reviews;

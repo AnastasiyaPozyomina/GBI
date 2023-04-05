@@ -4,15 +4,17 @@ import Col from 'react-bootstrap/Col';
 import NavHeader from '../../NavHeader/NavHeader';
 import Location from '../../Location';
 
-export default function PanelTop () {
+const PanelTop = () => {
   return (
-   <Row>
+    <Row>
       <Col>
         <Location />
       </Col>
       <Col>
-      <NavHeader />
+        <NavHeader />
       </Col>
     </Row>
   );
-}
+};
+
+export default PanelTop;

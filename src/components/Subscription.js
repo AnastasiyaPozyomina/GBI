@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Subscription () {
+const Subscription = () => {
   return (
     <section className="subscribe">
       <div className="subscribe--left">
@@ -48,4 +48,6 @@ export default function Subscription () {
 
     </section>
   );
-}
+};
+
+export default Subscription;

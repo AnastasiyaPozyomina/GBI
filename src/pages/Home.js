@@ -1,20 +1,19 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import PanelTop from '../components/Header/PanelTop/PanelTop';
-import SearchForm from '../components/SearchForm/SearchForm';
-import Logo from '../components/Logo';
+import Subscription from '../components/Subscription';
+import Sponsors from '../components/Sponsors';
+import Layout from '../components/Layout';
+import ProductPage from './ProductPage';
+import ProductCatalog from '../components/ProductCatalog';
 
-
-
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      <Container>
-        <PanelTop />
-        <Logo />
-        <SearchForm />
-      </Container>
-    </>
+    <Layout>
+      <ProductPage />
+      <ProductCatalog />
+      <Subscription />
+      <Sponsors />
+    </Layout>
   );
-}
+};
 
+export default Home;

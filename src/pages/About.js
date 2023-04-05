@@ -4,17 +4,14 @@ import Sponsors from '../components/Sponsors';
 import Subscription from '../components/Subscription';
 import Layout from '../components/Layout';
 
-
- const About = () => {
+const About = () => {
   return (
-    <>
     <Layout>
-    <AboutContentLeft />
-    <Subscription />
-    <Sponsors />  
+      <AboutContentLeft />
+      <Subscription />
+      <Sponsors />
     </Layout>
-    </>
   );
-}
+};
 
 export default About;
