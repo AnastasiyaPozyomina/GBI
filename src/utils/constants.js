@@ -1,0 +1,1 @@
+const ITEM_PER_PAGE = 100;

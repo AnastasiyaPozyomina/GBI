@@ -1,15 +1,11 @@
 import React from 'react';
-import {
-  useQuery
-} from 'react-query';
 import Product from './Product';
-import getProducts from '../request';
+import { useQuery } from '@tanstack/react-query';
+import { getProducts } from '../services/api';
 
-
-
-export default function ProductCatalog () {
+ const ProductCatalog = () => {
    const {data, status} = useQuery('products', getProducts);
-   
+
    const listProduct = data && data.map((product)=>(<Product key={product.id} product={product} title={product.title}
     image={product.image}/>))
    
@@ -18,7 +14,7 @@ export default function ProductCatalog () {
       <h2>Наша продукция </h2>
       <div>
    {status === 'error' && <p>Ошибка</p>}
-   {status === 'loading' && <p>Загрузка...</p>}
+   {status === 'loading' && <p>Загрузка..Исправляй.</p>}
    {status === 'success' &&
      <ul className="list">
       {listProduct}
@@ -27,3 +23,5 @@ export default function ProductCatalog () {
     </section>
   );
 }
+
+export default ProductCatalog;
