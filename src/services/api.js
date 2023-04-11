@@ -11,7 +11,9 @@ export const getPostList = async (page) => {
   }
 }
 
-export const getProducts = () => axios.get ('https://my-json-server.typicode.com/AnastasiyaPozyomina/restapigbi/products').then(res=>res.data)
+export const getProducts = () => axios.get ('https://my-json-server.typicode.com/AnastasiyaPozyomina/restapigbi/products').then(res=>res.data);
+
+
 
 //GET /posts?_page=7
 //GET /posts?_page=7&_limit=20

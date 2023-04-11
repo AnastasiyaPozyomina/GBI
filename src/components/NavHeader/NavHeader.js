@@ -1,28 +1,29 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 const NavHeader = () => {
   return (
     <div>
       <ul className="nav">
         <li>
-          <Link to="/about" className="nav__link link">О компании</Link>
-          
+          <NavLink to="/about" className="nav__link link">О компании</NavLink>
+
         </li>
         <li>
-          <Link to="/reviews" className="nav__link link">Отзывы</Link>
+          <NavLink to="/reviews" className="nav__link link">Отзывы</NavLink>
         </li>
         <li>
           <Link to="/blog" className="nav__link link">Статьи</Link>
         </li>
         <li>
-          <Link to="/questions-and-answers" className="nav__link link">Вопросы и ответы</Link>
+          <NavLink to="/questions-and-answers" className="nav__link link">
+            Вопросы и ответы
+          </NavLink>
         </li>
         <li>
-          <Link to="/contacts" className="nav__link link">Контакты</Link>
+          <NavLink to="/contacts" className="nav__link link">Контакты</NavLink>
         </li>
       </ul>
-    
 
       {/* <Navbar bg="light" expand="lg">
         <Container fluid>
@@ -45,6 +46,6 @@ const NavHeader = () => {
       </Navbar> */}
     </div>
   );
-}
+};
 
 export default NavHeader;

@@ -8,7 +8,6 @@ import ProductCatalog from '../components/ProductCatalog';
 const Home = () => {
   return (
     <Layout>
-      <ProductPage />
       <ProductCatalog />
       <Subscription />
       <Sponsors />
