@@ -1,10 +1,13 @@
 import React from 'react';
+import Layout from '../components/Layout';
+import Title from '../components/Title';
 
 const Reviews = () => {
   return (
-    <div>
-      <h1>Отзывы</h1>
-    </div>
+    <Layout>
+      <Title title={'Отзывы'} />
+    </Layout>
   );
 };
+
 export default Reviews;

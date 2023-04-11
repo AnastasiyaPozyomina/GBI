@@ -2,11 +2,12 @@ import React from 'react';
 import {Col, Row} from 'react-bootstrap';
 import Advantages from '../Advantages';
 import CarouselBox from '../CarouselBox';
+import Title from '../Title';
 
 const AboutContentLeft = () => {
   return (
     <div>
-      <h1>О нас</h1>
+      <Title title={'О нас'}/>
       <CarouselBox />
       <Row>
         <Col>

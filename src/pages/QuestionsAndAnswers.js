@@ -1,10 +1,18 @@
 import React from 'react';
+import Layout from '../components/Layout';
+import Title from '../components/Title';
 
-const QuestionsAndAnswers = () => {
+const QuestionsAndAnswers  = () => {
   return (
-    <div>
-      <h1>Вопросы и ответы</h1>
-    </div>
+      <Layout>
+        <Title title={'Вопросы и ответы'} />
+      </Layout>
   );
 };
+
 export default QuestionsAndAnswers;
+
+
+
+
+

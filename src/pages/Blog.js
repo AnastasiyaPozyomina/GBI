@@ -1,14 +1,14 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Posts from '../components/Posts';
+import Title from '../components/Title';
 
 const Blog = () => {
   return (
       <Layout>
-        <h1>Статьи </h1>
+        <Title title={'Статьи'} />
         <Posts />
       </Layout>
-   
   );
 };
 
