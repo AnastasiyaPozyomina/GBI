@@ -9,19 +9,27 @@ import Reviews from './pages/Reviews';
 import QuestionsAndAnswers from './pages/QuestionsAndAnswers';
 import ProductPage from './pages/ProductPage';
 import Contacts from './pages/Contacts';
+import TableProduct from './components/TableProduct';
+import FetchProduct from './components/FetchProduct';
 
-const App = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/reviews" element={<Reviews />} />
-      <Route path="/questions-and-answers" element={<QuestionsAndAnswers />} />
-      <Route path="/contacts" elememnt={<Contacts />} />
-      <Route path="/products/:id" element={<ProductPage />} />
-    </Routes>
-  </BrowserRouter>
-);
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="products" element={<ProductPage />}>
+          <Route path=":id" element={<FetchProduct />} />
+        </Route>
+        <Route path="about" element={<About />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="reviews" element={<Reviews />} />
+        <Route path="questions-and-answers" element={<QuestionsAndAnswers />} />
+        <Route path="contacts" elememnt={<Contacts />} />
+        <Route path="product-list" element={<TableProduct />} />
+        {/* <Route path="/products/:slug" element={<ProductPage />} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

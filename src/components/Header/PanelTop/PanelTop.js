@@ -6,7 +6,7 @@ import Location from '../../Location';
 
 const PanelTop = () => {
   return (
-    <Row>
+    <Row className="main-panel-top ">
       <Col>
         <Location />
       </Col>

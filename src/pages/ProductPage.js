@@ -1,10 +1,16 @@
 import React from 'react';
+import Layout from '../components/Layout';
+import FetchProduct from '../components/FetchProduct';
+import Sponsors from '../components/Sponsors';
+import Subscription from '../components/Subscription';
 
 const ProductPage = () => {
   return (
-    <div>
-      <h2>Индентификатор </h2>
-    </div>
+    <Layout>
+      <FetchProduct />
+      <Subscription />
+      <Sponsors />
+    </Layout>
   );
 };
 

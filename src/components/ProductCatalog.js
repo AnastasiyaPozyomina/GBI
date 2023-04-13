@@ -2,12 +2,10 @@ import React from 'react';
 import Product from './Product';
 import {useQuery} from '@tanstack/react-query';
 import {getProducts} from '../services/api';
+import { Link } from 'react-router-dom';
 
 const ProductCatalog = () => {
-  const {
-    data,
-    status
-  } = useQuery ({
+  const {data, status} = useQuery ({
     queryKey: ['products', getProducts],
     queryFn: () => getProducts (),
     keepPreviousData: true,
@@ -16,13 +14,14 @@ const ProductCatalog = () => {
   const listProduct =
     data &&
     data.map (product => (
-      <Product
+       <Product
         key={product.id}
         product={product}
         title={product.title}
         image={product.image}
       />
     ));
+
 
   return (
     <section className="our-products">
@@ -31,9 +30,9 @@ const ProductCatalog = () => {
         {status === 'error' && <p>Ошибка</p>}
         {status === 'loading' && <p>Загрузка..Исправляй.</p>}
         {status === 'success' &&
-          <ul className="list">
+          <div className="list">
             {listProduct}
-          </ul>}
+          </div>}
       </div>
     </section>
   );

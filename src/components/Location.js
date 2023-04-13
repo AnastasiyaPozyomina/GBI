@@ -6,7 +6,7 @@ const Location = () => {
     <div className="location__button">
       <Nav.Link href="#">
         <img
-          src="assets/images/main-panel/Vector.svg"
+          src="/assets/images/main-panel/Vector.svg"
           alt="иконка местоположения"
         />
         Санкт-Петербург

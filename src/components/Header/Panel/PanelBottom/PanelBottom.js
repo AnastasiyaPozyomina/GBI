@@ -1,12 +1,11 @@
 import React from 'react';
+import Logo from '../../../Logo';
 
 const PanelBottom = () => {
   return (
     <div className="main-panel-bottom">
       <div className="logo">
-        <a href="index.html">
-          <img src="assets/images/main-panel/image 1.svg" alt="логотип БЖИ" />
-        </a>
+        <Logo />
         <p className="logo__title">
           Оптовая продажа железобетонных изделий от производителя
         </p>
@@ -15,7 +14,7 @@ const PanelBottom = () => {
         <div className="phone-number">
           <a className="link" href="tel:88000000000">
             <img
-              src="assets/images/main-panel/Vector (1).svg"
+              src="/assets/images/main-panel/Vector (1).svg"
               alt="иконка телефона"
             />
             {' '}
@@ -25,14 +24,14 @@ const PanelBottom = () => {
         <div className="cart cart-click">
           <img
             className="cart__icon"
-            src="assets/images/main-panel/cart-icon.svg"
+            src="/assets/images/main-panel/cart-icon.svg"
             alt="иконка корзины"
           />
           <p className="cart__price">0 руб</p>
         </div>
         <img
           className="user-icon"
-          src="assets/images/main-panel/user-icon.svg"
+          src="/assets/images/main-panel/user-icon.svg"
           alt="иконка пользователя"
         />
       </div>

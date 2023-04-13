@@ -1,5 +1,6 @@
 import React from 'react';
 import {useQuery} from 'react-query';
+import {NavLink} from 'react-router-dom';
 
 const fetchProducts = async () => {
   const res = await fetch (
@@ -19,20 +20,48 @@ const SearchForm = () => {
           <li onClick="clickButtons()">
             <a className="menu-catalog__title" href="#">
               <img
-                src="assets/images/main-content/Group1.svg"
+                src="/assets/images/main-content/Group1.svg"
                 alt="меню каталога"
               />
               Каталог
             </a>
+
           </li>
-          {data.map (data => (
-            <li key={data.id}>
-              <a className="menu-catalog__link link" href="#">
-                {data.category}
-              </a>
-            </li>
-          ))}
-          <li><a className="menu-catalog__link link other" href="">...</a></li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Автопавильоны
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Плиты
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Балки
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Блоки
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Брусы
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Вазоны
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="product-list" className="menu-catalog__link link">
+              Гаражи
+            </NavLink>
+          </li>
         </ul>}
       <div className="search-container">
         <form className="search">

@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="company">
             <div className="company__logo">
               <img
-                src="assets/images/footer/логотипорг.svg"
+                src="/assets/images/footer/логотипорг.svg"
                 alt="логотип организаций"
               />
             </div>

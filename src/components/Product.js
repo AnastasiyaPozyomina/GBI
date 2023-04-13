@@ -1,16 +1,15 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Product = ({product}) => {
   return (
     <div>
-      <li className="list__item">
-        <NavLink
-          to={'/products/' + product.id}
+      <li key={product.id}  className="list__item">
+        <Link
+          to={`/products/${product.id}`}
           className="our-products__card"
-          product={product}
         >
-          {product.name}
+          {product.name} {product.id}
           <div className="our-products__caption">
             <p className="our-products__title">
               <img src="assets/images/our-products/icon.svg" alt="стрелка" />
@@ -25,7 +24,7 @@ const Product = ({product}) => {
             src={product.image}
             alt={product.title}
           />
-        </NavLink>
+        </Link>
       </li>
     </div>
   );

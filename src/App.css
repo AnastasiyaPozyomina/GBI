@@ -196,7 +196,7 @@ header {
 }
 
 .main-panel-top {
-  padding: 10px 2px 18px 8px;
+  padding: 21px 2px 22px 8px;
   border-bottom: 1px solid #E4E4E4;
 }
 
@@ -220,7 +220,7 @@ nav {
   border-bottom: 4px solid #FDBD1C;
 }
 
-.nav__link:active {
+.nav__link.active {
   color: #000;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -232,10 +232,10 @@ ul li a {
 
 ul li a:hover {
   color: #000;
-  border-bottom: 4px solid #FDBD1C;
+ 
 }
 
-ul li a:active {
+ul li a.active {
   border-bottom: 4px solid #FDBD1C;
 }
 
