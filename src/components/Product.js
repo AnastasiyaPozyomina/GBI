@@ -12,7 +12,7 @@ const Product = ({product}) => {
           {product.name} {product.id}
           <div className="our-products__caption">
             <p className="our-products__title">
-              <img src="assets/images/our-products/icon.svg" alt="стрелка" />
+              <img src="/assets/images/our-products/icon.svg" alt="стрелка" />
               {product.title}
             </p>
             <p className="our-products__price">

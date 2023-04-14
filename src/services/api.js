@@ -20,6 +20,14 @@ export const getProducts = () =>
     )
     .then (res => res.data);
 
+export const getCategoryBalki = () =>
+  axios
+    .get (
+      'https://my-json-server.typicode.com/AnastasiyaPozyomina/restapigbi/products/?category=Балки'
+    )
+    .then (res => res.data);
+
+
 //GET /posts?_page=7
 //GET /posts?_page=7&_limit=20
 

@@ -10,7 +10,7 @@ const MainContent = () => {
       </div>
       <div classclassName="main-content--right">
         <img
-          src="assets/images/main-content/Железобетонные перекрытия.png"
+          src="/assets/images/main-content/Железобетонные перекрытия.png"
           alt="железобетонные перекрытия"
         />
       </div>

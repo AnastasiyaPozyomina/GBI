@@ -32,7 +32,6 @@ const Posts = () => {
             ? <div>Error: {error.message}</div>
             : <PostList posts={data.posts} />}
 
-
       <Pagination
         currentPage={currentPage}
         totalItems={data.totalData}

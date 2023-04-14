@@ -2,26 +2,23 @@ import React from 'react';
 import Product from './Product';
 import {useQuery} from '@tanstack/react-query';
 import {getProducts} from '../services/api';
-import { Link } from 'react-router-dom';
 
 const ProductCatalog = () => {
   const {data, status} = useQuery ({
-    queryKey: ['products', getProducts],
-    queryFn: () => getProducts (),
-    keepPreviousData: true,
+    queryKey: ['products'],
+    queryFn: getProducts,
   });
 
   const listProduct =
     data &&
     data.map (product => (
-       <Product
+      <Product
         key={product.id}
         product={product}
         title={product.title}
         image={product.image}
       />
     ));
-
 
   return (
     <section className="our-products">

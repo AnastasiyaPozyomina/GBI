@@ -29,14 +29,14 @@ const Subscription = () => {
       <div className="subscribe--right">
         <img
           className="author__img"
-          src="assets/images/subscribe/icon-man-recovery 1.png"
+          src="/assets/images/subscribe/icon-man-recovery 1.png"
           alt="фотография Сергея Владимировича"
         />
         <div className="author">
           <p className="author__name">Сергей Владимирович</p>
           <img
             className="line"
-            src="assets/images/subscribe/line.svg"
+            src="/assets/images/subscribe/line.svg"
             alt="оранжевая линия"
           />
           <p className="author__text">

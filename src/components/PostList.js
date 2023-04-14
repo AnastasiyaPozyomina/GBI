@@ -8,7 +8,7 @@ const PostList = ({posts}) => {
       {posts.map (post => (
         <Card style={{width: '18rem'}}>
           <Card.Body>
-          <Card.Title>{post.id} </Card.Title>
+            <Card.Title>{post.id} </Card.Title>
             <Card.Title>{post.title} </Card.Title>
             <Card.Text>
               {post.body}

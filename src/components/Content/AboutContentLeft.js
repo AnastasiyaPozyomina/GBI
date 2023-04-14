@@ -7,7 +7,7 @@ import Title from '../Title';
 const AboutContentLeft = () => {
   return (
     <div>
-      <Title title={'О нас'}/>
+      <Title title={'О нас'} />
       <CarouselBox />
       <Row>
         <Col>
@@ -37,36 +37,36 @@ const AboutContentLeft = () => {
             <h3>8 преимуществ</h3>
             <ul>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Опыт производства
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Профессиональные кадры
                 предприятия
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Современное оборудование
                 производства
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Передовые технологии
                 производства
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Высококачественная сырьевая
                 база производства
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Организованная логистика
                 доставки железобетонных изделий
               </li>
               <li>
-                <img src="assets/images/about/оранж галка.svg" alt="галочка" />
+                <img src="/assets/images/about/оранж галка.svg" alt="галочка" />
                 Подтвержденное качество изделий
               </li>
             </ul>
@@ -74,8 +74,8 @@ const AboutContentLeft = () => {
         </Col>
         <Col>
           <div className="about-content--right">
-            <img src="assets/images/about/image15.png" alt="" />
-            <img src="assets/images/about/image16.png" alt="" />
+            <img src="/assets/images/about/image15.png" alt="" />
+            <img src="/assets/images/about/image16.png" alt="" />
           </div>
         </Col>
       </Row>
@@ -110,14 +110,14 @@ const AboutContentLeft = () => {
           <div className="our-team__list">
             <div className="our-team__item">
               <img
-                src="assets/images/subscribe/icon-man-recovery 1.png"
+                src="/assets/images/subscribe/icon-man-recovery 1.png"
                 alt="фотография Сергея Владимировича"
               />
               <div className="author">
                 <p className="author__name">Сергей Владимирович</p>
                 <img
                   className="line"
-                  src="assets/images/subscribe/line.svg"
+                  src="/assets/images/subscribe/line.svg"
                   alt="оранжевая линия"
                 />
                 <p className="author__text">
@@ -128,14 +128,14 @@ const AboutContentLeft = () => {
 
             <div className="our-team__item">
               <img
-                src="assets/images/subscribe/icon-man-recovery 1.png"
+                src="/assets/images/subscribe/icon-man-recovery 1.png"
                 alt="фотография Сергея Владимировича"
               />
               <div className="author">
                 <p className="author__name">Сергей Владимирович</p>
                 <img
                   className="line"
-                  src="assets/images/subscribe/line.svg"
+                  src="/assets/images/subscribe/line.svg"
                   alt="оранжевая линия"
                 />
                 <p className="author__text">
@@ -147,14 +147,14 @@ const AboutContentLeft = () => {
 
             <div className="our-team__item">
               <img
-                src="assets/images/subscribe/icon-man-recovery 1.png"
+                src="/assets/images/subscribe/icon-man-recovery 1.png"
                 alt="фотография Сергея Владимировича"
               />
               <div className="author">
                 <p className="author__name">Сергей Владимирович</p>
                 <img
                   className="line"
-                  src="assets/images/subscribe/line.svg"
+                  src="/assets/images/subscribe/line.svg"
                   alt="оранжевая линия"
                 />
                 <p className="author__text">

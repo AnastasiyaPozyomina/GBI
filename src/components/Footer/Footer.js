@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="location__button">
             <a href="#">
               <img
-                src="assets/images/main-panel/Vector.svg"
+                src="/assets/images/main-panel/Vector.svg"
                 alt="иконка местоположения"
               />
               г. Москва, ул. Марии Ульяновой 33/23, офис 3
@@ -54,20 +54,20 @@ const Footer = () => {
         <div className="footer--right">
           <div className="socials">
             <a className="socials__item" href="#">
-              <img src="assets/images/footer/ютуб.svg" alt="иконка ютуба" />
+              <img src="/assets/images/footer/ютуб.svg" alt="иконка ютуба" />
             </a>
             <a className="socials__item" href="#">
-              <img src="assets/images/footer/vk.svg" alt="иконка вконтакте" />
+              <img src="/assets/images/footer/vk.svg" alt="иконка вконтакте" />
             </a>
             <a className="socials__item" href="#">
               <img
-                src="assets/images/footer/facebook.svg"
+                src="/assets/images/footer/facebook.svg"
                 alt="иконка фейсбук"
               />
             </a>
             <a className="socials__item" href="#">
               <img
-                src="assets/images/footer/instagram.svg"
+                src="/assets/images/footer/instagram.svg"
                 alt="иконка инстаграм"
               />
             </a>
@@ -120,7 +120,7 @@ const Footer = () => {
             <div className="footer__logo">
               <a href="#">
                 <img
-                  src="assets/images/footer/logocomp.svg"
+                  src="/assets/images/footer/logocomp.svg"
                   alt="логотип компании"
                 />
               </a>

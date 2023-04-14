@@ -9,7 +9,7 @@ import Reviews from './pages/Reviews';
 import QuestionsAndAnswers from './pages/QuestionsAndAnswers';
 import ProductPage from './pages/ProductPage';
 import Contacts from './pages/Contacts';
-import TableProduct from './components/TableProduct';
+import ProductList from './pages/ProductList';
 import FetchProduct from './components/FetchProduct';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="reviews" element={<Reviews />} />
         <Route path="questions-and-answers" element={<QuestionsAndAnswers />} />
         <Route path="contacts" elememnt={<Contacts />} />
-        <Route path="product-list" element={<TableProduct />} />
+        <Route path="product-list" element={<ProductList />} />
         {/* <Route path="/products/:slug" element={<ProductPage />} /> */}
       </Routes>
     </BrowserRouter>

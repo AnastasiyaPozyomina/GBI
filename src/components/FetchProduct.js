@@ -2,23 +2,15 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import {getProducts} from '../services/api';
 import {useQuery} from '@tanstack/react-query';
-import Title from '../components/Title';
+import Title from './Title';
 import {Col, Row} from 'react-bootstrap';
 
 const FetchProduct = () => {
   const id = useParams ().id;
   console.log (id);
-  const {
-    isLoading,
-    data,
-    isError,
-    isFetching,
-    isPreviousData,
-    error,
-  } = useQuery ({
+  const {isLoading, data, isError, error} = useQuery ({
     queryKey: ['posts', id],
-    queryFn: () => getProducts (),
-    keepPreviousData: true,
+    queryFn: getProducts,
   });
 
   if (isLoading) return 'Loading...';
