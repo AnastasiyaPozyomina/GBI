@@ -1403,3 +1403,11 @@ flex-direction: row;
   margin-bottom: 52.9px;
   height: 261px;
 }
+
+
+.wrapper-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+

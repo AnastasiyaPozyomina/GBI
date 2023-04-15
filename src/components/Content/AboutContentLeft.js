@@ -3,11 +3,23 @@ import {Col, Row} from 'react-bootstrap';
 import Advantages from '../Advantages';
 import CarouselBox from '../CarouselBox';
 import Title from '../Title';
+import {Breadcrumb} from 'antd';
+import {NavLink} from 'react-router-dom';
 
 const AboutContentLeft = () => {
   return (
     <div>
       <Title title={'О нас'} />
+      <Breadcrumb
+        items={[
+          {
+            title: <NavLink to="/">Главная</NavLink>,
+          },
+          {
+            title: 'О нас',
+          },
+        ]}
+      />
       <CarouselBox />
       <Row>
         <Col>

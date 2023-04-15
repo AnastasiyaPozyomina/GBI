@@ -3,6 +3,7 @@ import Title from './Title';
 import {useQuery} from '@tanstack/react-query';
 import {getCategoryBalki} from '../services/api';
 import BootstrapTable from 'react-bootstrap-table-next';
+import paginationFactory from 'react-bootstrap-table2-paginator';
 
 const columns = [
   {
@@ -43,6 +44,14 @@ const columns = [
   },
 ];
 
+const options = {
+  page: 1,
+  sizePerPage: 5,
+  nextPageText: '>',
+  prePageText: '<',
+  showTotal: true,
+};
+
 const TableProduct = () => {
   const {isLoading, data, isError, error} = useQuery ({
     queryKey: ['products'],
@@ -55,7 +64,16 @@ const TableProduct = () => {
   return (
     <div>
       <Title title={'Балки'} />
-      <BootstrapTable keyField="id" data={data} columns={columns} />
+      <BootstrapTable
+        keyField="id"
+        data={data}
+        columns={columns}
+        // striped
+        hover
+        // expandRow={expandRow}
+        //apply the pagination function here
+        pagination={paginationFactory (options)}
+      />
     </div>
   );
 };
